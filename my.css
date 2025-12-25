@@ -137,10 +137,15 @@ body { background: #f0e0c6; color: #222; }
   }
 }
 
+.about-grid img{
+  display: block;
+}
+
 /* Show menu when active */
 .nav-links.active {
   display: flex;
 }
+
 
 
 
