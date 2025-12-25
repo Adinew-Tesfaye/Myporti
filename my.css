@@ -33,7 +33,7 @@ body { background: #f0e0c6; color: #222; }
   margin-top: 60px; 
   padding: 80px 20px;
   text-align: center;
-  background: URL("images/my.png") center/cover no-repeat;
+  background: URL("images/web.png") center/cover no-repeat;
   color: #fff;
 }
 .site-header h1 { margin: 0 0 6px; font-size: 2.4rem; }
@@ -141,6 +141,7 @@ body { background: #f0e0c6; color: #222; }
 .nav-links.active {
   display: flex;
 }
+
 
 
 
