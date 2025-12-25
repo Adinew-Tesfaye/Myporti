@@ -1,0 +1,143 @@
+/* ========== Reset & Base ========== */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.5; }
+body { background: #f0e0c6; color: #222; }
+
+/* Visually hidden helper */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden; clip: rect(1px,1px,1px,1px);
+  white-space: nowrap; border: 0; padding: 0; margin: -1px;
+}
+
+/* ========== NAV ========== */
+.site-nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  background: #333; color: #fff;
+  padding: 12px 10px; text-align: center;
+  z-index: 1000;
+  height: 10vh;
+}
+.site-nav a {
+  color: #fff;
+  margin: 0 8px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+}
+.site-nav a:hover { color: #ffd700; }
+
+/* ========== HEADER ========== */
+.site-header {
+  margin-top: 60px; 
+  padding: 80px 20px;
+  text-align: center;
+  background: url("Images/web.jpg") center/cover no-repeat;
+  color: #fff;
+}
+.site-header h1 { margin: 0 0 6px; font-size: 2.4rem; }
+.site-header p { margin: 0 0 12px; font-weight: 600; }
+.hero-img { display: none; }
+
+/* ========== MAIN SECTIONS ========== */
+.section { padding: 40px 16px; max-width: 1100px; margin: 0 auto; }
+
+/* About */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+  align-items: start;
+}
+.about-photo { width: 100%; max-width: 300px; border-radius: 12px; display: block; margin-left: auto; }
+
+/* Skills */
+.skills-grid { display: grid; grid-template-columns: 300px 1fr; gap: 20px; align-items: start; }
+.skills-image { width: 100%; max-width: 300px; border-radius: 8px; display:block; }
+.skills-list {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+.skills-list li {
+  background: #111; color: #fff; padding: 8px 12px; border-radius: 6px;
+}
+
+/* Experience */
+.job { margin-bottom: 20px; }
+.job-date { color: #666; font-size: 0.95rem; }
+
+/* Projects */
+.project { padding: 14px; border-radius: 8px; background: #e8f6e9; margin-bottom: 14px; }
+
+/* Contact form */
+.contact-form {
+  background: #fff; padding: 18px; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+.contact-form input, .contact-form textarea {
+  width: 100%; padding: 10px 12px; margin-top: 10px; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem;
+}
+.contact-form button {
+  margin-top: 12px; background: #111; color: #fff; padding: 10px 16px; border-radius: 6px; border: none; cursor: pointer;
+}
+.contact-form button:hover { background: #333; }
+
+/* Footer */
+.footer { width: 100%; background: #0a6b1f; color: #fff; padding: 40px 16px; margin-top: 40px; }
+.footer-inner { max-width: 1100px; margin: 0 auto; display: flex; gap: 30px; justify-content: space-between; flex-wrap: wrap; }
+.footer-col { flex: 1 1 260px; min-width: 220px; }
+.footer-col h3 { margin-top: 0; color: #fff; }
+.footer-links { list-style: none; padding: 0; margin: 8px 0 0; }
+.footer-links li { margin: 6px 0; }
+.footer-links a { color: #f3f3f3; text-decoration: none; }
+.footer-links a:hover { color: #ffd700; }
+.footer-social a { margin-right: 10px; font-size: 22px; color: #fff; text-decoration: none; }
+.footer-bottom { text-align: center; margin-top: 18px; color: #f1f1f1; font-size: 0.95rem; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 14px; }
+
+
+/* Hide nav-links on mobile by default */
+.nav-links {
+  display: flex;
+  gap: 12px;
+}
+
+/* Hamburger menu icon */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+  }
+  .nav-links a {
+    display: block;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+  }
+}
+
+/* Show menu when active */
+.nav-links.active {
+  display: flex;
+}

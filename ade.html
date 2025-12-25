@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adinew Tesfaye — Portfolio</title>
+
+  <!-- Boxicons for social icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- main stylesheet (save as my.css in same folder) -->
+  <link rel="stylesheet" href="my.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+  <div class="menu-toggle" id="menu-toggle">
+    <i class='bx bx-menu'></i>
+  </div>
+  <div class="nav-links" id="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+  <header class="site-header">
+    <h1>ADINEW TESFAYE</h1>
+    <p>Software Developer | Tech student | Problem Solver</p>
+    <img class="hero-img" src="Images/web.jpg" alt="programmer desk">
+  </header>
+
+  <main>
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <img class="about-photo" src="Images/ade.jpg" alt="Adinew Tesfaye">
+        <div>
+          <p>
+            Hello! I'm Adinew Tesfaye, a passionate software developer with over 2 years of experience in building web applications.
+            I specialize in full-stack development: creating efficient, scalable and user-friendly solutions. My journey in tech started during
+            college where I majored in Computer Science. Since then I've worked on projects ranging from small startups to larger teams.
+          </p>
+          <p>
+            In my free time I enjoy hiking, reading tech blogs, and contributing to open source. I'm always eager to learn new technologies
+            and tackle challenging problems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <img src="Images/web.jpg" alt="web" class="skills-image">
+        <ul class="skills-list">
+          <li>HTML5 &amp; CSS3</li>
+          <li>JavaScript</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Python</li>
+          <li>SQL &amp; NoSQL Databases</li>
+          <li>Git &amp; Version Control</li>
+          <li>Web Design</li>
+          <li>API Development</li>
+          <li>Cloud Services (AWS, Azure)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <h2>Professional Experience</h2>
+
+      <div class="job">
+        <h3>Senior Software Engineer - TechCorp Inc.</h3>
+        <p class="job-date">January 2024 – Present</p>
+        <ul>
+          <li>Led a team of 5 developers to build a scalable e-commerce platform.</li>
+          <li>Optimized application performance, reducing load times by 40%.</li>
+          <li>Integrated third-party APIs for payments and analytics.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Software Developer - Innovate Solutions</h3>
+        <p class="job-date">June 2020 – December 2023</p>
+        <ul>
+          <li>Built and maintained web apps using React and Node.js.</li>
+          <li>Collaborated with designers to implement responsive UI/UX.</li>
+          <li>Conducted code reviews and mentored junior developers.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Intern - Startup Hub</h3>
+        <p class="job-date">May 2017 – August 2019</p>
+        <ul>
+          <li>Assisted in prototyping a mobile app using JS frameworks.</li>
+          <li>Performed bug fixes and feature enhancements.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>E-Commerce Website</h3>
+        <p>A full-stack online store built with React, Node.js, and MongoDB. Includes authentication, catalog, cart and payment integration.</p>
+        <a href="https://adinew-tesfaye.github.io/Myporti/" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Task Management App</h3>
+        <p>A web-based task manager built with vanilla JS, HTML, CSS and LocalStorage for persistence.</p>
+        <a href="https://adinew-tesfaye.github.io/Myporti/" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>This personal site — built with HTML, CSS and JS to showcase skills &amp; experience.</p>
+        <a href="https://adinew-tesfaye.github.io/Myporti/" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+
+      <form id="contactForm" class="contact-form">
+        <label for="name" class="visually-hidden">Your Name</label>
+        <input id="name" name="name" type="text" placeholder="Your Name" required>
+
+        <label for="phone" class="visually-hidden">Phone</label>
+        <input id="phone" name="phone" type="text" placeholder="+251 992 222 052" required>
+
+        <label for="email" class="visually-hidden">Email</label>
+        <input id="email" name="email" type="email" placeholder="makbeltesfyae570@gmail.com" required>
+
+        <label for="message" class="visually-hidden">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- floating social icons -->
+  <!--<aside class="platform" aria-hidden="false">
+    <a href="https://tiktok.com/adila2052" target="_blank" rel="noopener"><i class='bx bxl-tiktok'></i></a>
+    <a href="https://facebook.com/makbela2052" target="_blank" rel="noopener"><i class='bx bxl-facebook'></i></a>
+    <a href="mailto:makbeltesfaye570@gmail.com"><i class='bx bxl-gmail'></i></a>
+    <a href="https://instagram.com/wzadila" target="_blank" rel="noopener"><i class='bx bxl-instagram'></i></a>
+    <a href="https://t.me/Adnwo" target="_blank" rel="noopener"><i class='bx bxl-telegram'></i></a>
+    <a href="https://github.com/Adinew-Tesfaye/Myporti" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
+  </aside>-->
+
+  <!-- OPTIMIZED FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>📞 +251 992 222 052</p>
+        <p>📞 +251 704 264 173</p>
+        <p>📧 adinewtesfaye58@gmail.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Follow Me</h3>
+        <div class="footer-social">
+          <a href="https://facebook.com/makbela2052" target="_blank" rel="noopener"><i class='bx bxl-facebook'></i></a>
+          <a href="https://instagram.com/wzadila" target="_blank" rel="noopener"><i class='bx bxl-instagram'></i></a>
+          <a href="https://t.me/Adnwo" target="_blank" rel="noopener"><i class='bx bxl-telegram'></i></a>
+          <a href="mailto:makbeltesfaye570@gmail.com"><i class='bx bxl-gmail'></i></a>
+          <a href="https://github.com/Adinew-Tesfaye" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Adinew Tesfaye | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth nav scroll
+    document.querySelectorAll('.site-nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const id = link.getAttribute('href');
+        const target = document.querySelector(id);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Contact form (simple client-side demo)
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      if (name) {
+        alert(`Thank you, ${name}! Your message has been sent.`);
+        e.target.reset();
+      } else {
+        alert('Please fill in all required fields.');
+      }
+    });
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+
+// Toggle nav when menu icon is clicked
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+// Close nav automatically when a link is clicked (mobile)
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
+});
+
+  </script>
+</body>
+</html>
