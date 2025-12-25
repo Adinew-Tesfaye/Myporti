@@ -146,8 +146,9 @@ body { background: #f0e0c6; color: #222; }
   display: flex;
 }
 footer{
-  width: 100;
+ max-width: 100;
 }
+
 
 
 
