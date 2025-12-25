@@ -145,6 +145,10 @@ body { background: #f0e0c6; color: #222; }
 .nav-links.active {
   display: flex;
 }
+footer{
+  width: 100;
+}
+
 
 
 
